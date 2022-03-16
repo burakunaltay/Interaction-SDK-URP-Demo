@@ -1448,7 +1448,9 @@ PrefabInstance:
       propertyPath: _hand
       value: 
       objectReference: {fileID: 2085728775}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2729420837077267871, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
+    - {fileID: 651976744953255437, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
 --- !u!1 &763525830 stripped
 GameObject:
@@ -1785,6 +1787,7 @@ PrefabInstance:
       objectReference: {fileID: 2085728758}
     m_RemovedComponents:
     - {fileID: 651976744953255437, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
+    - {fileID: 2729420837077267871, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
 --- !u!1001 &965292273
 PrefabInstance:
@@ -3098,7 +3101,9 @@ PrefabInstance:
       propertyPath: _hand
       value: 
       objectReference: {fileID: 2085728777}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 651976744953255437, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
+    - {fileID: 2729420837077267871, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 885ecae56b16f13428a67de5ae482a72, type: 3}
 --- !u!114 &1705683834 stripped
 MonoBehaviour:
