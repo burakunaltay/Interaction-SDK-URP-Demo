@@ -172,8 +172,26 @@ namespace Oculus.Interaction.HandPosing
             base.OnDisable();
         }
 
+        [SerializeField]
+        public PointerEvent pointerEvent = new PointerEvent();
+        [SerializeField]
+        public static bool grabbed = false;
         private void InvokeOnPointerEvent(PointerArgs args)
         {
+            //Debug.Log("EventType: " + args.PointerEvent.ToString());
+            pointerEvent = args.PointerEvent;
+            if(args.PointerEvent == PointerEvent.Select)
+            {
+                grabbed = true;
+                Debug.Log("Grab started for " + this.name);
+            }
+            else if(args.PointerEvent == PointerEvent.Unselect)
+            {
+                Debug.Log("Grab stopped for " + this.name);
+                grabbed = false;
+            }
+
+            Debug.Log("Grab ended for " + this.name);
             OnPointerEvent.Invoke(args);
         }
 
